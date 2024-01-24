@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mylayout"
+    android:orientation="vertical"
+    tools:context="html.xhtml.viwer.html.mhtml.editor.Activities.ViewCodeActivity">
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/orange">
+
+        <ImageView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/back_arrow_svg"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/sImgTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="Html Code Viewer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <br.tiagohm.codeview.CodeView
+        android:id="@+id/codeView"
+        android:layout_below="@id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cv_font_size="14"
+        app:cv_highlight_line_number="36"
+        app:cv_show_line_number="true"
+        app:cv_start_line_number="0"
+        app:cv_wrap_line="true"
+        app:cv_zoom_enable="true">
+    </br.tiagohm.codeview.CodeView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pdfConvertBtn"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_12sdp"
+        app:cardBackgroundColor="@color/orange"
+        app:cardCornerRadius="@dimen/_16sdp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/pdf_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Convert to PDF"
+                android:textColor="@color/white" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

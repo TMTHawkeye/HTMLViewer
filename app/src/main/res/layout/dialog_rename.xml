@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_16sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_15sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@color/orange"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:src="@drawable/pdf_icon"
+                android:tint="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:text="Convert To PDF"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/fileNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@android:color/transparent"
+            android:hint="Enter file name...."
+            android:textSize="@dimen/_14sdp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_8sdp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:cardBackgroundColor="#878484"
+                app:cardCornerRadius="@dimen/_30sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:cardBackgroundColor="@color/orange"
+                app:cardCornerRadius="@dimen/_30sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/okBtn"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

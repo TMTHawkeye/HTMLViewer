@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HTML Viewer</string>
+    <string name="main_app">HTML Viewer</string>
+    <string name="create_title">Create HTML</string>
+    <string name="html_files_title">HTML Files</string>
+    <string name="html_content_title">HTML Viewer</string>
+    <string name="converted_files_title">Converted Files</string>
+    <string name="recent_files_title">Recenet Files</string>
+
+    <string name="backPress_content">We work hard to make things better for you,and would love to know.How would you rate this app?</string>
+
+    <string name="t1"><![CDATA[<]]></string>
+    <string name="t2">/</string>
+    <string name="t3"><![CDATA[>]]></string>
+
+    <string name="htmlstring"><![CDATA[<html>\n<head>\n<title>Untitled Document</title></head>\n<body>\n<h1>Heading</h1>\n<h2>Heading2</h2>\n<p>This is paragraph</p>\n</body>\n</html>]]></string>
+
+
+
+</resources>
